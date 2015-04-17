@@ -7,7 +7,7 @@
 
 	<meta charset="utf-8">
 
-	<title>How to Create an Audio Player [Tutorial]</title>
+	<title>Stats Project</title>
 
 	<!-- Audio Player CSS & Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -22,14 +22,19 @@
 </head>
 
 <body>
-
+	<h1 id="heading-1"> Test Fade-In/Fade-Out </h1>
+	<button id="button-1">Click me pls</button>
 	<!-- Audio Player HTML -->
-	<div class="audio-player">
+	<div class="audio-player" id="player-1">
 		<h1>Demo - Preview Song</h1>
 		<%= audio_tag("zimmer.mp3", controls: true, id:"audio-player" ) %>
 	</div>
 
 	<script>
+		$("button-1").click(function(){
+			$("heading-1").fadeOut();
+			$("player-1").fadeIn("slow");
+		});
 		$(document).ready(function() {
 			$('#audio-player').mediaelementplayer({
 				alwaysShowControls: true,
@@ -38,6 +43,7 @@
 				audioWidth: 400,
 				audioHeight: 120
 			});
+			$("player-1").hide();
 		});
 		/*!
 		* MediaElement.js
