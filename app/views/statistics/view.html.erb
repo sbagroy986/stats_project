@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style type="text/css">
+		html, body { margin: 0; padding: 0; }
+		body {background-image: url("http://thebootstrapthemes.com/live/thebootstrapthemes-modex/images/bg.jpg");height:10000px;}
+	</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container" style="color:white;">
+  <h2>Some basic stats</h2>
+  <p>Total users till now: <%= @users_count %> </p>            
+  <table class="table table-condensed table-hover">
+    <thead>
+      <tr>
+        <th>-</th>
+        <th>Song 1 - Bruno Mars</th>
+        <th>Song 2 - Nickelback</th>
+        <th>Song 3 - 3 Doors Down</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>John</th>
+        <th>Doe</th>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

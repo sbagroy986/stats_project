@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  get 'statistics/view'
+
   resources :users
   get 'landing_page/home'
-
+  get 'statistics/view' => 'statistics#view'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -200,7 +200,6 @@ div.audio-player {
 	width: 12px;
 	height: 14px;
 	top: -4px;
-	background: url(../assets/images/handle.png) no-repeat;
 }
 
 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle { top: -2px; }
@@ -213,7 +212,6 @@ div.audio-player {
 	height: 23px;
 	top: -26px;
 	margin-left: -17px;
-	background: url(../assets/images/time-box.png);
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-float-current {
