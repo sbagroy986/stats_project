@@ -14,6 +14,9 @@
   <!-- end Audio Player CSS & Scripts -->
 
   <style type="text/css">
+    a{
+      cursor:pointer;
+    }
     html, body { margin: 0; padding: 0; }
     body { background: #f2f2f2 no-repeat top center;}
     .audio-player { margin: 0 auto;}
@@ -47,43 +50,46 @@
       </div>
     <div id="player-xx">      
         <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %>
-      I listened to the clip and I <%= f.select :completed, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
+      I listened to the clip and I <%= f.select :completed, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-99" class="pause">Next</a>
     </div>
 
     <div id="player-1">      
         <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
-      I listened to the clip and I <%= f.select :before_song1, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
+      I listened to the clip and I <%= f.select :before_song1, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-2" class="pause">Next</a>
     </div>
 
     <div id="player-2">      
         <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
-      I listened to the clip and I <%= f.select :before_song2, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
+      I listened to the clip and I <%= f.select :before_song2, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-3" class="pause">Next</a>
     </div>
 
     <div id="player-3">      
         <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
-      I listened to the clip and I <%= f.select :before_song3, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
+      I listened to the clip and I <%= f.select :before_song3, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-4" class="pause">Next</a>
     </div>
 
     <div id="player-4">      
+      Artist: Nickelback <br/> <br/>
         <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
-      I listened to the clip and I <%= f.select :after_song1, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
+      I listened to the clip and I <%= f.select :after_song1, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-5" class="pause">Next</a>
     </div>
 
     <div id="player-5">      
+      Artist: 3 Doors Down <br/> <br/>
         <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
-      I listened to the clip and I <%= f.select :after_song2, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
+      I listened to the clip and I <%= f.select :after_song2, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-6" class="pause">Next</a>
     </div>
 
-    <div id="player-6">      
+    <div id="player-6">   
+    Artist: Bruno Mars  <br/> <br/> 
         <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
-      I listened to the clip and I <%= f.select :after_song3, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
+      I listened to the clip and I <%= f.select :after_song3, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <!-- <button id="button-7" class="pause">Next</button> -->
     </div>
     <div class="actions" id="actions">
@@ -97,32 +103,41 @@
 
   <!-- Audio Player HTML -->
   <script>
+
+    function stateChange(newState) {
+    setTimeout(function(){
+        if(newState == -1){}
+    }, 5000);
+    }
+
     $("#button-1").click(function(){
-      $("#heading-1").fadeOut();
-      $("#player-1").fadeIn("slow");
+      $("#heading-1").fadeOut("fast");
+      $("#player-1").delay(800).fadeIn(1000);
       $("#show").fadeIn();
     });
     $("#button-2").click(function(){
       $("#player-1").fadeOut("fast");
-      $("#player-2").fadeIn();
+      $("#player-2").delay(800).fadeIn(1000);
     });
     $("#button-3").click(function(){
-      $("#player-2").fadeOut();
-      $("#player-3").fadeIn("slow");
+      $("#player-2").fadeOut("fast");
+      $("#player-3").delay(800).fadeIn(1000);
     });
     $("#button-4").click(function(){
-      $("#player-3").fadeOut();
-      $("#player-4").fadeIn("slow");
+      $("#player-3").fadeOut("fast");
+     $("#player-4").delay(800).fadeIn(1000);
     });
     $("#button-5").click(function(){
-      $("#player-4").fadeOut();
-      $("#player-5").fadeIn("slow");
+      $("#player-4").fadeOut("fast");
+      $("#player-5").delay(800).fadeIn(1000);
     });
     $("#button-6").click(function(){
-      $("#player-5").fadeOut();
-      $("#player-6").fadeIn("slow");
-      $("#actions").fadeIn();
+      $("#player-5").fadeOut("fast");
+      $("#player-6").delay(800).fadeIn(1000);
+      $("#actions").delay(5000).fadeIn(1000);
     });
+
+
     $(document).ready(function() {
       $("#show").hide();
       $("#player-xx").hide();
