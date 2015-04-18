@@ -15,7 +15,7 @@
 
   <style type="text/css">
     html, body { margin: 0; padding: 0; }
-    body { padding: 260px; background: #f2f2f2 no-repeat top center; }
+    body { background: #f2f2f2 no-repeat top center;}
     .audio-player { margin: 0 auto;}
   </style>
 <meta name="robots" content="noindex,follow" />
@@ -35,62 +35,54 @@
       </div>
     <% end %>
     
-    <div id="heading-1">
-      <h1> Test Fade-In/Fade-Out </h1>
-      <a id="button-1">Click me pls</a>
+    <div id="menu"  class="container spacer about">
+    <h2 class="text-center wowload fadeInUp">What you need to do</h2>  
+      <div class="row">
+      <div class="col-sm-6 wowload fadeInLeft">
+        <h4><i class="fa fa-music"></i> It's pretty easy actually </h4>
+        <p>Just listen to the snippet of the song. When you're done, tell us how you feel about it and then click next. There are 6 snippets, each of about 30 seconds, so it won't take you more than a few minutes.</p>
+      </div>
+      <div id="heading-1">
+        <a id="button-1">Click me pls</a>
+      </div>
+    <div id="player-xx">      
+        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %>
+      I listened to the clip and I <%= f.select :completed, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
+      <a id="button-99" class="pause">Next</a>
     </div>
-    <div id="show">Please listen to the audio snipper and tell us what you think about it.</div>
 
     <div id="player-1">      
-      <div class="audio-player">
-        <h1>Demo - Preview Song</h1>
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %>
-      </div>
+        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :before_song1, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-2" class="pause">Next</a>
     </div>
 
     <div id="player-2">      
-      <div class="audio-player">
-        <h1>Demo - Preview Song</h1>
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %>
-      </div>
+        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :before_song2, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-3" class="pause">Next</a>
     </div>
 
     <div id="player-3">      
-      <div class="audio-player">
-        <h1>Demo - Preview Song</h1>
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %>
-      </div>
+        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :before_song3, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-4" class="pause">Next</a>
     </div>
 
     <div id="player-4">      
-      <div class="audio-player">
-        <h1>Demo - Preview Song</h1>
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %>
-      </div>
+        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :after_song1, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-5" class="pause">Next</a>
     </div>
 
     <div id="player-5">      
-      <div class="audio-player">
-        <h1>Demo - Preview Song</h1>
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %>
-      </div>
+        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :after_song2, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-6" class="pause">Next</a>
     </div>
 
     <div id="player-6">      
-      <div class="audio-player">
-        <h1>Demo - Preview Song</h1>
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %>
-      </div>
+        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :after_song3, [['',nil],['love it','love'],['like it','like'],['dislike it','dislike'],['hate it','hate']] %>.
       <!-- <button id="button-7" class="pause">Next</button> -->
     </div>
@@ -100,6 +92,7 @@
 
 
   <% end %>
+  </div>
 
 
   <!-- Audio Player HTML -->
@@ -110,8 +103,8 @@
       $("#show").fadeIn();
     });
     $("#button-2").click(function(){
-      $("#player-1").fadeOut();
-      $("#player-2").fadeIn("slow");
+      $("#player-1").fadeOut("fast");
+      $("#player-2").fadeIn();
     });
     $("#button-3").click(function(){
       $("#player-2").fadeOut();
@@ -128,10 +121,11 @@
     $("#button-6").click(function(){
       $("#player-5").fadeOut();
       $("#player-6").fadeIn("slow");
-      $("#actions").show();
+      $("#actions").fadeIn();
     });
     $(document).ready(function() {
       $("#show").hide();
+      $("#player-xx").hide();
       $("#player-1").hide();
       $("#player-2").hide();
       $("#player-3").hide();
