@@ -11,25 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150417145334) do
-
-  create_table "after_preferences", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "order"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "before_preferences", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "order"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20150418042442) do
 
   create_table "users", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "after_song1"
+    t.string   "after_song2"
+    t.string   "after_song3"
+    t.string   "before_song1"
+    t.string   "before_song2"
+    t.string   "before_song3"
+    t.integer  "completed"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end

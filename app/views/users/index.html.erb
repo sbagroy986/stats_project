@@ -1,0 +1,11 @@
+
+
+<h1>Home</h1>
+<p>Enter message here</p>
+<%= link_to 'New User', new_user_path, :id => "disappear" %>
+
+<script type="text/javascript">
+  $("#disappear").click(function{
+    $("#disappear").fadeOut();
+  });
+</script>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>After song1:</strong>
+  <%= @user.after_song1 %>
+</p>
+
+<p>
+  <strong>After song2:</strong>
+  <%= @user.after_song2 %>
+</p>
+
+<p>
+  <strong>After song3:</strong>
+  <%= @user.after_song3 %>
+</p>
+
+<p>
+  <strong>Before song1:</strong>
+  <%= @user.before_song1 %>
+</p>
+
+<p>
+  <strong>Before song2:</strong>
+  <%= @user.before_song2 %>
+</p>
+
+<p>
+  <strong>Before song3:</strong>
+  <%= @user.before_song3 %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @user.completed %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

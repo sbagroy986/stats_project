@@ -22,20 +22,61 @@
 </head>
 
 <body>
-	<h1 id="heading-1"> Test Fade-In/Fade-Out </h1>
-	<button id="button-1">Click me pls</button>
-	<!-- Audio Player HTML -->
-	<div class="audio-player" id="player-1">
-		<h1>Demo - Preview Song</h1>
-		<%= audio_tag("zimmer.mp3", controls: true, id:"audio-player" ) %>
+	<div id="heading-1">
+		<h1> Test Fade-In/Fade-Out </h1>
+		<button id="button-1">Click me pls</button>
 	</div>
+	<!-- Audio Player HTML -->
+	<%= form_for @user do |f|%>
+		<div id="player-1">
+			
+			<div class="audio-player">
+				<h1>Demo - Preview Song</h1>
+				<%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %>
+			</div>
+			<button id="button-2" class="pause">Next</button>
+		</div>
+			<br/>
+			<br/>
+		
+		<div id="player-2">
+			<div class="audio-player">
+				<!-- <h1>Demo - Preview Song</h1> -->
+				<%= audio_tag("zimmer.mp3", controls: true, id:"audio-player" ) %>
+			</div>
+			<button id="button-3">Next</button>
+		</div>
+
+		<div id="player-3">
+			<div class="audio-player">
+				<!-- <h1>Demo - Preview Song</h1> -->
+				<%= audio_tag("zimmer.mp3", controls: true, id:"audio-player" ) %>
+			</div>
+			<%= submit_tag "Save!", :id => "button-4" %>
+		</div>
+	<% end %>
+
+
+
 
 	<script>
-		$("button-1").click(function(){
-			$("heading-1").fadeOut();
-			$("player-1").fadeIn("slow");
+		$("#button-1").click(function(){
+			$("#heading-1").fadeOut();
+			$("#player-1").fadeIn("slow");
+		});
+		$("#button-2").click(function(){
+			$("#player-1").fadeOut();
+			$("#player-2").fadeIn("slow");
+		});
+		$("#button-3").click(function(){
+			$("#player-2").fadeOut();
+			$("#player-3").fadeIn("slow");
 		});
 		$(document).ready(function() {
+			$("#player-1").hide();
+			$("#player-1").hide();
+			$("#player-3").hide();
+			$("#player-2").hide();
 			$('#audio-player').mediaelementplayer({
 				alwaysShowControls: true,
 				features: ['playpause','volume','progress'],
@@ -43,7 +84,6 @@
 				audioWidth: 400,
 				audioHeight: 120
 			});
-			$("player-1").hide();
 		});
 		/*!
 		* MediaElement.js
