@@ -8,6 +8,7 @@ a{color:#00a9c6; text-decoration:none;}
 -o-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
 outline: none !important;
+cursor: pointer;
 }
 
 h1,h2,h3,h4{margin: 0;line-height: 1em;}
