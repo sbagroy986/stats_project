@@ -17,6 +17,7 @@
     a{
       cursor:pointer;
     }
+    body {  color:#333; font:300 15px/15px Roboto,Arial,Helvetica;background:url(../images/bg.jpg) right no-repeat fixed #fff; -webkit-font-smoothing:antialiased;}
     html, body { margin: 0; padding: 0; }
     body { background: #f2f2f2 no-repeat top center;}
     .audio-player { margin: 0 auto;}
@@ -44,9 +45,11 @@
       <div class="col-sm-6 wowload fadeInLeft">
         <h4><i class="fa fa-music"></i> It's pretty easy actually </h4>
         <p>Just listen to the snippet of the song. When you're done, tell us how you feel about it and then click next. There are 6 snippets, each of about 30 seconds, so it won't take you more than a few minutes.</p>
+
+        <p><i>Please listen to the entire snippet before clicking next!</i></p>
       </div>
       <div id="heading-1">
-        <a id="button-1">Click me pls</a>
+        <a id="button-1">Get started!</a>
       </div>
     <div id="player-xx">      
         <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %>
@@ -55,45 +58,52 @@
     </div>
 
     <div id="player-1">      
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
+    <h5>Snippet 1</h5>
+        <%= audio_tag("misc/T1a.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :before_song1, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-2" class="pause">Next</a>
     </div>
 
     <div id="player-2">      
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
+     <h5>Snippet 2</h5>
+       <%= audio_tag("misc/T2a.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :before_song2, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-3" class="pause">Next</a>
     </div>
 
     <div id="player-3">      
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
+     <h5>Snippet 3</h5>
+       <%= audio_tag("misc/T3a.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :before_song3, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-4" class="pause">Next</a>
     </div>
 
     <div id="player-4">      
+    <h5>Snippet 4</h5>
       Artist: Nickelback <br/> <br/>
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
+        <%= audio_tag("misc/T2b.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :after_song1, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-5" class="pause">Next</a>
     </div>
 
     <div id="player-5">      
+    <h5>Snippet 5</h5>
       Artist: 3 Doors Down <br/> <br/>
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
+        <%= audio_tag("misc/T3b.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :after_song2, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <a id="button-6" class="pause">Next</a>
     </div>
 
     <div id="player-6">   
+    <h5>Snippet 6</h5>
     Artist: Bruno Mars  <br/> <br/> 
-        <%= audio_tag("demo.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
+        <%= audio_tag("misc/T1b.mp3", controls: true, id:"audio-player" ) %> <br/> <br/>
       I listened to the clip and I <%= f.select :after_song3, [['',nil],['love it','love'],['like it','like'],["don't like or dislike it",'neutral'],['dislike it','dislike'],['hate it','hate']] %>.
       <!-- <button id="button-7" class="pause">Next</button> -->
     </div>
+    <br/>
     <div class="actions" id="actions">
-      <%= f.submit %>
+      <%= f.submit "Submit!" %>
     </div>
 
 
