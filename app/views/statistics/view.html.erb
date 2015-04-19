@@ -27,20 +27,14 @@
       </tr>
     </thead>
     <tbody>
+      <% @users.each do |f| %>
       <tr>
-        <th>John</th>
-        <th>Doe</th>
+        <th>User</th>
+        <th><%= f.before_song1 %> / <%= f.after_song1 %></th>
+        <th><%= f.before_song2 %> / <%= f.after_song2 %></th>
+        <th><%= f.before_song3 %> / <%= f.after_song3 %></th>
       </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
+      <% end %>
     </tbody>
   </table>
 </div>
