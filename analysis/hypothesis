@@ -6,5 +6,8 @@ H2(alternate): Mean < 0(users are negatively biased)
 Sample_Mu = ..
 Sample_Sigma = ..
 
+Testing H1(Mean != 0)
 95% range of Mu = (sample_mu - sample_sigma/root(n)*T[0.05, n-1], sample_mu + sample_sigma/root(n)*T[0.05, n-1])
 H0 is rejected if mu = 0 does not lie in this interval
+
+Plugging in the required values, we find that 0 does not lie in the interval and thus the Null Hypothesis is rejected H1(Mean != 0) is accepted.

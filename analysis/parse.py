@@ -47,6 +47,10 @@ for i in range(0,9):
 	if i >= 4: bars[i].set_color('b')
 	else: bars[i].set_color('r')
 
+sample_mu = sum([(i-4)*detailed[i] for i in range(0,9)])*1.0/ (sum(detailed)*1.0)
+sample_sigma = (sum([((i-4-sample_mu)**2)*detailed[i] for i in range(0,9)])*1.0 / ((sum(detailed) - 1)*1.0))**0.5
+
+print sample_mu, sum(detailed), sample_sigma
 ax.set_xticks(range(0,9))
 ax.set_xticklabels(range(-4,5))
 plt.xlabel("Difference in likability values")
