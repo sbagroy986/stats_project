@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StatsProject</title>
+  <link rel="stylesheet" media="all" href="/assets/application-eeaf61b8da8669e77c95c2c3f1afee7137247ee29b04ca79d2c28d2050f5cb81.css" data-turbolinks-track="true" />
+  <script src="/assets/application-b52230650b1b58e7f8ad8c49c1fd5c562d08742d469c4f7f8a4324d2bcdd12c2.js" data-turbolinks-track="true"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="FO4Co78BveDPiPlWra2efXjr/OdWflJxo51ztt2oGXs46DOsAmbmoCmLGRmDmgqmIVcYpJHigy1VRbN858xJnA==" />
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style type="text/css">
+		html, body { margin: 0; padding: 0; }
+		body {background-image: url("http://thebootstrapthemes.com/live/thebootstrapthemes-modex/images/bg.jpg");height:10000px;}
+	</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container" style="color:white;">
+  <h2>Some basic stats</h2>
+  <p>Total users till now: 88 </p>            
+  <table class="table table-condensed table-hover">
+    <thead>
+      <tr>
+        <th>-</th>
+        <th>Song 1 - Bruno Mars</th>
+        <th>Song 2 - Nickelback</th>
+        <th>Song 3 - 3 Doors Down</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>User</th>
+        <th> / </th>
+        <th> / </th>
+        <th> / </th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / like</th>
+        <th>neutral / neutral</th>
+        <th>neutral / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / like</th>
+        <th>like / love</th>
+        <th>like / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>like / neutral</th>
+        <th>dislike / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / hate</th>
+        <th>like / neutral</th>
+        <th>dislike / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / like</th>
+        <th>neutral / dislike</th>
+        <th>dislike / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / hate</th>
+        <th>dislike / dislike</th>
+        <th>dislike / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>neutral / dislike</th>
+        <th>neutral / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / like</th>
+        <th>like / like</th>
+        <th>neutral / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>hate / love</th>
+        <th>neutral / like</th>
+        <th>hate / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>hate / love</th>
+        <th>neutral / like</th>
+        <th>hate / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / dislike</th>
+        <th>neutral / like</th>
+        <th>dislike / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / hate</th>
+        <th>dislike / hate</th>
+        <th>hate / hate</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>dislike / like</th>
+        <th>like / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>hate / hate</th>
+        <th>hate / like</th>
+        <th>like / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / like</th>
+        <th>like / like</th>
+        <th>like / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / neutral</th>
+        <th>dislike / dislike</th>
+        <th>neutral / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / neutral</th>
+        <th>like / dislike</th>
+        <th>like / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / hate</th>
+        <th>hate / like</th>
+        <th>neutral / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>dislike / love</th>
+        <th>hate / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th> / </th>
+        <th>like / </th>
+        <th> / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / like</th>
+        <th>like / dislike</th>
+        <th>like / hate</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>neutral / love</th>
+        <th>like / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>neutral / like</th>
+        <th>like / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>neutral / love</th>
+        <th>love / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / dislike</th>
+        <th>neutral / like</th>
+        <th>like / hate</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / dislike</th>
+        <th>dislike / like</th>
+        <th>like / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / love</th>
+        <th>like / like</th>
+        <th>love / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>like / like</th>
+        <th>neutral / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>like / love</th>
+        <th>like / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / hate</th>
+        <th>neutral / like</th>
+        <th>like / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th> / </th>
+        <th> / </th>
+        <th> / </th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / neutral</th>
+        <th>like / love</th>
+        <th>love / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / love</th>
+        <th>like / neutral</th>
+        <th>neutral / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>hate / hate</th>
+        <th>hate / hate</th>
+        <th>hate / hate</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>like / like</th>
+        <th>like / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / like</th>
+        <th>like / like</th>
+        <th>neutral / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / love</th>
+        <th>love / like</th>
+        <th>love / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / neutral</th>
+        <th>neutral / neutral</th>
+        <th>neutral / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>like / love</th>
+        <th>neutral / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / neutral</th>
+        <th>hate / like</th>
+        <th>like / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / neutral</th>
+        <th>like / neutral</th>
+        <th>neutral / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>hate / neutral</th>
+        <th>neutral / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>dislike / like</th>
+        <th>neutral / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / dislike</th>
+        <th>hate / love</th>
+        <th>like / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>dislike / hate</th>
+        <th>neutral / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / hate</th>
+        <th>like / hate</th>
+        <th>neutral / </th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / neutral</th>
+        <th>neutral / like</th>
+        <th>like / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>dislike / neutral</th>
+        <th>neutral / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / love</th>
+        <th>like / like</th>
+        <th>like / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / like</th>
+        <th>like / like</th>
+        <th>neutral / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / love</th>
+        <th>love / love</th>
+        <th>love / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>neutral / like</th>
+        <th>like / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / love</th>
+        <th>neutral / love</th>
+        <th>like / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / love</th>
+        <th>like / love</th>
+        <th>like / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / like</th>
+        <th>like / like</th>
+        <th>like / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / love</th>
+        <th>like / love</th>
+        <th>love / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>hate / like</th>
+        <th>like / love</th>
+        <th>love / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / like</th>
+        <th>like / dislike</th>
+        <th>dislike / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / dislike</th>
+        <th>neutral / like</th>
+        <th>like / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / like</th>
+        <th>neutral / dislike</th>
+        <th>like / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>dislike / love</th>
+        <th>love / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / dislike</th>
+        <th>hate / like</th>
+        <th>hate / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>neutral / love</th>
+        <th>dislike / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / like</th>
+        <th>like / love</th>
+        <th>love / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / neutral</th>
+        <th>like / love</th>
+        <th>like / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / dislike</th>
+        <th>dislike / like</th>
+        <th>like / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / dislike</th>
+        <th>neutral / love</th>
+        <th>love / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / neutral</th>
+        <th>neutral / neutral</th>
+        <th>like / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / love</th>
+        <th>neutral / like</th>
+        <th>neutral / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>dislike / neutral</th>
+        <th>like / love</th>
+        <th>love / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>love / love</th>
+        <th>like / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / love</th>
+        <th>like / love</th>
+        <th>neutral / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>neutral / neutral</th>
+        <th>neutral / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / love</th>
+        <th>like / love</th>
+        <th>neutral / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / like</th>
+        <th>love / love</th>
+        <th>love / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / love</th>
+        <th>love / love</th>
+        <th>dislike / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / like</th>
+        <th>like / love</th>
+        <th> / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>dislike / love</th>
+        <th>like / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / like</th>
+        <th>dislike / neutral</th>
+        <th>neutral / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>love / neutral</th>
+        <th>neutral / love</th>
+        <th>dislike / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>neutral / neutral</th>
+        <th>like / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / like</th>
+        <th>dislike / love</th>
+        <th>hate / like</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / hate</th>
+        <th>neutral / neutral</th>
+        <th>neutral / dislike</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>neutral / love</th>
+        <th>like / love</th>
+        <th>love / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>neutral / like</th>
+        <th>neutral / neutral</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th> / love</th>
+        <th>like / love</th>
+        <th>like / love</th>
+      </tr>
+      <tr>
+        <th>User</th>
+        <th>like / neutral</th>
+        <th>neutral / like</th>
+        <th>dislike / neutral</th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+
+</body>
+</html>
