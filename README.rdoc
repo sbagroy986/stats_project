@@ -1,28 +1,6 @@
-== README
+This is a Probability and Statistics (MTH201) course project at Indraprastha Institute of Information Technology, Delhi.
+The goal of the project is to establish a relationship between the disposition of a person towards a song and their knowledge of the artist of the song. The effect of knowing an artist on a person's liking of the song.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+You can find the website hosted here:  stats-project.herokuapp.com
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+The website is involved with the data collection portion of the project. A part of the statistical analysis can be found in /analysis , which mainly consists of a few graphs and scripts for creating the same. The calculations for Hypothesis Testing ha sbeen done locally.
